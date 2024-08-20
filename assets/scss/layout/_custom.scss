@@ -1,0 +1,23 @@
+$success: #2cc585;
+$info: #4a72ff;
+$warning: #ffb054;
+$danger: #d65f5f;
+$primary-100: #fffdf5;
+$primary-200: #fffbe5;
+$primary-300: #e8e3da;
+$primary-400: #6e6b67;
+$accent-100: #e0efde;
+$accent-200: #569573;
+$accent-300: #406c55;
+$gray-100: #f8f9fa;
+$gray-200: #dee2e6;
+$gray-300: #adb5bd;
+$gray-400: #6c757d;
+$gray-500: #343a40;
+$gray-600: #212529;
+
+// button hover
+.accent-200-hover:hover{
+    background-color: $accent-300;
+    border: none;
+}

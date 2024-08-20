@@ -1,0 +1,40 @@
+$success: #2cc585;
+$info: #4a72ff;
+$warning: #ffb054;
+$danger: #d65f5f;
+$primary-100: #fffdf5;
+$primary-200: #fffbe5;
+$primary-300: #e8e3da;
+$primary-400: #6e6b67;
+$accent-100: #e0efde;
+$accent-200: #569573;
+$accent-300: #406c55;
+$gray-100: #f8f9fa;
+$gray-200: #dee2e6;
+$gray-300: #adb5bd;
+$gray-400: #6c757d;
+$gray-500: #343a40;
+$gray-600: #212529;
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.navbar{
+  input{
+    width: 276px;
+  }
+  input:focus{
+    z-index: 10;
+  }
+  .login:hover{
+    background-color: $accent-300;
+  }
+  .hamburger-menu{
+    border: 0;
+  }
+}
