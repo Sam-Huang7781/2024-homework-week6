@@ -17,7 +17,11 @@ $gray-500: #343a40;
 $gray-600: #212529;
 
 // button hover
-.accent-200-hover:hover{
-    background-color: $accent-300;
-    border: none;
+.accent-200-hover:hover {
+  background-color: $accent-300;
+  border: none;
+}
+// width fit-content
+.w-fit-content {
+  width: fit-content;
 }

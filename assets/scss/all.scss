@@ -2,9 +2,9 @@
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-@import './utils/utils';
 @import "../../node_modules/bootstrap";
-
+@import './utils/utils';
+@import "bootstrap/scss/utilities/api";
 @import './base/base';
 
 @import './layout/header';
@@ -12,4 +12,3 @@
 @import './layout/custom';
 
 @import './pages/index';
-@import './pages/admin';
