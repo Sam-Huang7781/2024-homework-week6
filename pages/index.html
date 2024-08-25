@@ -13,7 +13,7 @@
   <body>
     <%- include('./layout/header', {page: 'assignment'}); -%>
     <!-- hero section -->
-    <div class="hero bg-primary-100">
+    <section class="hero bg-primary-100">
       <div
         class="container position-relative py-lg-20 py-0 d-flex align-items-center justify-content-center justify-content-lg-start"
       >
@@ -57,12 +57,12 @@
           </button>
         </section>
       </div>
-    </div>
+    </section>
 
     <!-- 熱門主題 -->
-    <div class="popular bg-primary-100">
-      <div class="container py-lg-10 py-8">
-        <h2 class="fs-lg-1 fs-4 mb-lg-6 mb-4 fw-bold">熱門主題</h2>
+    <section class="popular bg-primary-100">
+      <div class="container py-lg-20 py-12">
+        <h2 class="fs-lg-2 fs-4 mb-6 fw-bold">熱門主題</h2>
         <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 gy-lg-6 gy-2">
           <div class="col">
             <div class="card">
@@ -242,15 +242,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- 精選文章 -->
-    <div class="featured bg-primary-100">
-      <div class="container py-lg-10 py-8">
+    <section class="featured bg-primary-100">
+      <div class="container py-lg-20 py-12 position-relative">
         <!-- 輪播 -->
         <div class="row">
           <div class="col-lg-4">
-            <h2 class="fs-lg-1 fs-4 mb-lg-6 mb-4 fw-bold">精選文章</h2>
+            <h2 class="fs-lg-2 fs-4 mb-6 fw-bold">精選文章</h2>
           </div>
           <div class="col-lg-8">
             <div id="carouselExampleControls" class="carousel slide">
@@ -260,7 +260,7 @@
                   <div class="row">
                     <div class="col-lg-6 d-none d-lg-block">
                       <div class="card w-auto me-6 border-0 bg-primary-100">
-                        <div class="card-body p-0 pt-4">
+                        <div class="card-body p-0">
                           <picture>
                             <source
                               media="(max-width: 992px)"
@@ -280,7 +280,7 @@
                           </p>
                           <a
                             href="#"
-                            class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                            class="btn text-accent-200 fw-bold p-0 my-5 fz-5 font-newsreader"
                             >Read More</a
                           >
                           <hr />
@@ -289,7 +289,7 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="card w-auto me-6 border-0 bg-primary-100">
-                        <div class="card-body p-0 pt-4">
+                        <div class="card-body p-0">
                           <picture>
                             <source
                               media="(max-width: 992px)"
@@ -384,7 +384,7 @@
                           >
                             <a
                               href="#"
-                              class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                              class="btn text-accent-200 fw-bold p-0 my-5 fz-5 font-newsreader"
                               >Read More</a
                             >
                             <span
@@ -404,15 +404,17 @@
         </div>
 
         <!-- 輪播按鈕 -->
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="d-flex mb-lg-32 fw-normal align-items-center">
+        <div
+          class="carousel-btn d-flex justify-content-between justify-content-lg-end position-lg-absolute position-relative flex-lg-column"
+        >
+          <div class="d-flex mb-lg-32 fw-normal align-items-center mb-lg-8">
             <span class="">1</span>
             <span class="mx-3 fz-3">/</span>
             <span class="swiper-pagination-total">3</span>
           </div>
           <section class="carousel-pagination d-flex">
             <button
-              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justified-content-center px-4"
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justified-content-center px-5"
               data-bs-target="#carouselExampleControls"
               data-bs-slide="prev"
             >
@@ -432,7 +434,7 @@
             </button>
             <hr class="mx-4" style="width: 80px; height: 3px" />
             <button
-              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justified-content-center px-4"
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justified-content-center px-5"
               data-bs-target="#carouselExampleControls"
               data-bs-slide="next"
             >
@@ -454,7 +456,124 @@
           </section>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- 母親節活動 -->
+    <section class="event bg-primary-200 py-15 position-relative">
+      <div class="container">
+        <div class="d-lg-block d-none position-absolute bottom-0">
+          <img src="../assets/images/bg-1.png" alt="" />
+        </div>
+        <div class="my-lg-80 my-5 d-flex align-items-center flex-column">
+          <h6 class="text-accent-200 fz-6 mb-5 fw-bold">\ 母親節強檔活動 /</h6>
+          <h5 class="text-gray-500 fz-6 fz-lg-8 mb-5 fw-bold">
+            家庭訂閱方案限時 7 折
+          </h5>
+          <ul
+            class="text-gray-400 fw-semibold p-0 mb-10 d-flex flex-column gap-4"
+          >
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">每月最新文章無限閱讀</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">專屬會員限定內容</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">定期電子報</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">年度精選禮物</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">24 /7 優先客戶服務</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">為每個成員量身打造專屬行程</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn btn-accent-200 accent-200-hover border-0 rounded-pill fz-5 px-6 py-3 text-white fw-bold"
+            >我想了解</a
+          >
+        </div>
+
+        <div class="position-absolute bottom-0 end-0 pe-20">
+          <picture>
+            <source
+              media="(max-width: 992px)"
+              srcset="../../assets/images/bg-2-sm.png"
+            />
+            <img src="../assets/images/bg-2.png" alt="" />
+          </picture>
+        </div>
+        <div
+          class="container fake-filter position-absolute w-100 bg-primary-200 py-2 bottom-0"
+        ></div>
+      </div>
+    </section>
+
+    <!-- 大家都在看 -->
+    <section class="watch bg-primary-100 py-18 position-relative">
+      <div class="container">
+        <h2 class="fs-lg-2 fs-4 mb-10 fw-bold">大家都在看</h2>
+        <div class="row">
+          <div class="col-lg-3 bg-white ">
+            <ul
+              class="list-group sidebar d-flex flex-column align-items-start p-0"
+            >
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="nav-link bg-accent-100 p-4 d-block"
+                  >．酒精路跑地圖</a
+                >
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="p-4 d-block">．台北拉麵圖鑑</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="p-4 d-block">．海島自由行</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="p-4 d-block">．短天數出國推薦</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="border-0 p-4 d-block text-start"
+                  >．週末露營趣</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="bg-white">
+              <div class="p-lg-4">
+                <h6 class="fs-4 text-accent-200 fw-black mb-lg-4 mb-12">
+                  酒精路跑地圖
+                </h6>
+                <ul class="gap-20 mb-0">
+                  <li class="fw-bold col-12">
+                    ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                  </li>
+                  <li class="fw-bold col-12">
+                    ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                  </li>
+                  <li class="fw-bold col-12">
+                    ｜台南老宅手工酒藏,尋味百年人文釀意
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer', {page: 'assignment'}); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

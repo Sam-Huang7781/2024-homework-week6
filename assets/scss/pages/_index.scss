@@ -14,5 +14,25 @@
 }
 
 .featured{
+  .fake-filter{
 
+  }
+  .position-lg-absolute{
+    @media screen and (min-width: 992px){
+      position: absolute !important;
+      bottom: 80px;
+      
+    }
+  }
+}
+
+
+.watch{
+  .sidebar{
+    height: 636px;
+  }
+  a:hover{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
 }
