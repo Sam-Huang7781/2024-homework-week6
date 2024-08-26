@@ -401,7 +401,8 @@ $enable-button-pointers: true !default;
 // 自定義 關掉RFS
 $enable-rfs: false !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+// 自訂義 打開負spacing
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
