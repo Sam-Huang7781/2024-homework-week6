@@ -10,28 +10,89 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
-      .swiper {
-        width: 600px;
-        height: 300px;
-      }
+
     </style>
   </head>
   <body>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="row">
+      <div class="col-12">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow me-6 mb-6"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    酒精路跑地圖
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜台南老宅手工酒藏,尋味百年人文釀意
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="../assets/images/hots-1-sm.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#夜貓行程</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#barhopping</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#全台酒吧</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
