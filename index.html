@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>index</title>
+    <script type="module" crossorigin src="/2024-homework-week6/assets/main-38c684a8.js"></script>
+    <link rel="stylesheet" href="/2024-homework-week6/assets/main-bd1d2b3d.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary-100 p-0">
+  <div class="container">
+    <div class="container py-lg-11 py-6 border-bottom border-gray-300 d-flex align-items-center">
+      <a class="navbar-brand me-9" href="index.html"
+        ><img
+          src="/2024-homework-week6/assets/Vector-554a0338.svg"
+          alt=""
+          class="my-auto align-baseline"
+          width="96"
+      /></a>
+      <button
+        class="navbar-toggler hamburger-menu ms-auto"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex me-auto position-relative" role="search">
+          <input
+            class="form-control me-2 rounded-pill w-sm-100"
+            type="search"
+            placeholder="搜尋文章"
+            aria-label="Search"
+          />
+          <span
+            class="material-symbols-outlined position-absolute end-0 top-50 me-2 translate-middle text-accent-200"
+          >
+            search
+          </span>
+        </form>
+        <ul class="navbar-nav d-flex align-items-lg-center">
+          <li class="nav-item pw-5 py-2 mx-5">
+            <a class="nav-link px-2 fw-bold" href="./chapter.html">所有文章</a>
+          </li>
+          <li class="nav-item pw-5 py-2 mx-5">
+            <a class="nav-link px-2 fw-bold" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item pw-5 py-2 mx-5">
+            <a class="nav-link px-2 fw-bold" href="#">關於我們</a>
+          </li>
+          <li class="nav-item pw-5 py-2 ms-5">
+            <button
+              class="login d-grid btn btn-accent-200 text-white rounded-pill px-8 py-3"
+              href="signup.html"
+              type="button"
+            >
+              登入 / 註冊
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- 畫布 -->
+
+<div
+  class="offcanvas offcanvas-top h-75 bg-primary-100"
+  tabindex="-1"
+  id="offcanvasTop"
+  aria-labelledby="offcanvasTopLabel"
+>
+  <div class="offcanvas-header px-10 ">
+    <h5 id="offcanvasTopLabel"></h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="d-flex me-auto position-relative" role="search">
+      <input
+        class="form-control me-2 rounded-pill w-sm-100"
+        type="search"
+        placeholder="搜尋文章"
+        aria-label="Search"
+      />
+      <span
+        class="material-symbols-outlined position-absolute end-0 top-50 me-2 translate-middle text-accent-200"
+      >
+        search
+      </span>
+    </form>
+    <ul class="navbar-nav d-flex align-items-start px-4">
+      <li class="nav-item mb-4 mt-8">
+        <a class="nav-link fw-bold" href="#">所有文章</a>
+      </li>
+      <li class="nav-item my-4">
+        <a class="nav-link fw-bold" href="#">訂閱方案</a>
+      </li>
+      <li class="nav-item mb-8 mt-4">
+        <a class="nav-link fw-bold" href="#">關於我們</a>
+      </li>
+      <li class="nav-item w-100 display-block">
+        <a
+          href="signup.html"
+          class="login btn btn-accent-200 text-white rounded-pill px-4 w-100"
+        >
+          <span>登入 / 註冊</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    <!-- hero section -->
+    <section class="hero bg-primary-100">
+      <div
+        class="container position-relative py-lg-20 py-0 d-flex align-items-center justify-content-center justify-content-lg-start"
+      >
+        <picture class="w-100">
+          <source
+            media="(max-width: 992px)"
+            srcset="../../assets/images/banner-sm.png"
+          />
+          <img
+            class="card-img"
+            src="../../assets/images/banner.png"
+            alt="banner-logo"
+          />
+        </picture>
+        <section
+          class="content position-absolute align-self-end align-self-lg-center d-flex flex-column align-items-center align-items-lg-start mb-12 mb-lg-0 ms-lg-15"
+        >
+          <h5 class="text-white fw-bold mb-3 fs-lg-6 fs-6">
+            獻給新世代的生活風格誌
+          </h5>
+          <h1 class="text-white fw-bold mb-6 fs-lg-2 fs-5">
+            一起探索生活的無限可能
+          </h1>
+          <button
+            class="btn btn-accent-200 rounded-pill text-white d-flex align-items-center justify-content-center px-6 w-fit-content accent-200-hover border-0"
+          >
+            <span class="me-3 fz-5 fw-bold display-inline">馬上訂閱</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <!-- 熱門主題 -->
+    <section class="popular bg-primary-100">
+      <div class="container py-lg-20 py-12">
+        <h2 class="fs-lg-3 fs-4 mb-6 fw-bold">熱門主題</h2>
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 gy-lg-6 gy-2">
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-1-c3f2428d.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-1-sm-e28ce55e.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  城市漫遊者
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-3-6a361920.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-3-sm-03d78e75.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  秘境尋蹤人
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-5-b39e8856.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-5-sm-65d802c3.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  品味設計家
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-8-ce962716.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-8-sm-402e892b.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  美食探險記
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-2-f68e2e55.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-2-sm-2123bacc.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  美學建築誌
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-4-3688ebf7.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-4-sm-0dfc8cb3.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  慢活生活行
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-6-82f2b629.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-6-sm-fed41742.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  工藝匠心賞
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/2024-homework-week6/assets/theme-7-88f0cd69.png "
+                />
+                <img
+                  src="/2024-homework-week6/assets/theme-7-sm-0e3e7b41.png"
+                  alt=""
+                  class="w-100"
+                />
+              </picture>
+              <a class="card-img-overlay d-flex btn" href="#">
+                <h5
+                  class="card-title fz-5 text-white fw-bold align-self-center mx-auto m-0"
+                >
+                  時尚先鋒派
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 精選文章 -->
+    <section class="featured bg-primary-100">
+      <div class="container py-lg-20 py-12 position-relative">
+        <!-- 輪播 -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="fs-lg-3 fs-4 mb-6 fw-bold">精選文章</h2>
+          </div>
+          <div class="col-lg-8">
+            <div id="carouselExampleControls" class="carousel slide">
+              <div class="carousel-inner">
+                <!-- First slide with two cards -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                      <div class="card w-auto me-6 border-0 bg-primary-100">
+                        <div class="card-body p-0">
+                          <picture>
+                            <source
+                              media="(max-width: 992px)"
+                              srcset="../../assets/images/articles-1-sm.png"
+                            />
+                            <img
+                              class="card-img"
+                              src="/2024-homework-week6/assets/articles-1-ebc46e31.png"
+                              alt="banner-logo"
+                            />
+                          </picture>
+                          <h5 class="card-title fw-bold fz-5 mt-6">
+                            私人島嶼的露營奇遇記
+                          </h5>
+                          <p class="card-text fz-4">
+                            遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+                          </p>
+                          <a
+                            href="#"
+                            class="btn text-accent-200 fw-bold p-0 my-5 fz-5 font-newsreader"
+                            >Read More</a
+                          >
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card w-auto me-6 border-0 bg-primary-100">
+                        <div class="card-body p-0">
+                          <picture>
+                            <source
+                              media="(max-width: 992px)"
+                              srcset="../../assets/images/articles-2-sm.png"
+                            />
+                            <img
+                              class="card-img"
+                              src="/2024-homework-week6/assets/articles-2-05d8b79f.png"
+                              alt="banner-logo"
+                            />
+                          </picture>
+                          <h5 class="card-title fw-bold mt-6 fz-5">
+                            窺探米其林三星主廚的絕密手藝
+                          </h5>
+                          <p class="card-text fz-4">
+                            在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                          </p>
+                          <div
+                            class="read-more d-flex justify-content-between align-items-center"
+                          >
+                            <a
+                              href="#"
+                              class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                              >Read More</a
+                            >
+                            <span
+                              class="bg-primary-300 text-primary-400 px-2 rounded-1"
+                              >會員專屬</span
+                            >
+                          </div>
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second slide with two cards -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card w-auto me-6 border-0 bg-primary-100">
+                        <div class="card-body p-0">
+                          <picture>
+                            <source
+                              media="(max-width: 992px)"
+                              srcset="../../assets/images/articles-1-sm.png"
+                            />
+                            <img
+                              class="card-img"
+                              src="/2024-homework-week6/assets/articles-1-ebc46e31.png"
+                              alt="banner-logo"
+                            />
+                          </picture>
+                          <h5 class="card-title fw-bold fz-5 mt-6">
+                            私人島嶼的露營奇遇記
+                          </h5>
+                          <p class="card-text fz-4">
+                            遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+                          </p>
+                          <a
+                            href="#"
+                            class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                            >Read More</a
+                          >
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                      <div class="card w-auto me-6 border-0 bg-primary-100">
+                        <div class="card-body p-0">
+                          <picture>
+                            <source
+                              media="(max-width: 992px)"
+                              srcset="../../assets/images/articles-2-sm.png"
+                            />
+                            <img
+                              class="card-img"
+                              src="/2024-homework-week6/assets/articles-2-05d8b79f.png"
+                              alt="banner-logo"
+                            />
+                          </picture>
+                          <h5 class="card-title fw-bold fz-5 mt-6">
+                            窺探米其林三星主廚的絕密手藝
+                          </h5>
+                          <p class="card-text fz-4">
+                            在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                          </p>
+                          <div
+                            class="read-more d-flex justify-content-between align-items-center"
+                          >
+                            <a
+                              href="#"
+                              class="btn text-accent-200 fw-bold p-0 my-5 fz-5 font-newsreader"
+                              >Read More</a
+                            >
+                            <span
+                              class="bg-primary-300 text-primary-400 px-2 rounded-1"
+                              >會員專屬</span
+                            >
+                          </div>
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 輪播按鈕 -->
+        <div
+          class="carousel-btn d-flex justify-content-between justify-content-lg-end position-lg-absolute position-relative flex-lg-column"
+        >
+          <div class="d-flex mb-lg-32 fw-normal align-items-center mb-lg-8">
+            <span class="">1</span>
+            <span class="mx-3 fz-3">/</span>
+            <span class="swiper-pagination-total">3</span>
+          </div>
+          <section class="carousel-pagination d-flex">
+            <button
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justify-content-center px-5"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-left text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                />
+              </svg>
+            </button>
+            <hr class="mx-4" style="width: 80px; height: 3px" />
+            <button
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justify-content-center px-5"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                ></path>
+              </svg>
+            </button>
+            <div></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 母親節活動 -->
+    <section class="event bg-primary-200 pt-16 position-relative">
+      <div class="container">
+        <div
+          class="d-flex align-items-center flex-column overflow-hidden position-relative"
+        >
+          <h6 class="text-accent-200 fs-6 fs-lg-5 mb-5 fw-bold">
+            \ 母親節強檔活動 /
+          </h6>
+          <h5 class="text-gray-500 fs-5 fs-lg-3 mb-5 fw-bold">
+            家庭訂閱方案限時 7 折
+          </h5>
+          <ul
+            class="text-gray-400 fw-semibold p-0 mb-10 d-flex flex-column gap-4"
+          >
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">每月最新文章無限閱讀</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">專屬會員限定內容</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">定期電子報</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">年度精選禮物</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">24 /7 優先客戶服務</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-symbols-outlined me-3">check</span>
+              <span class="fz-4">為每個成員量身打造專屬行程</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn btn-accent-200 accent-200-hover border-0 rounded-pill fz-5 px-6 py-3 mb-20 text-white fw-bold"
+            >我想了解</a
+          >
+          <div
+            class="orange-baby d-lg-block d-none position-absolute bottom-0 start-0"
+          >
+            <img src="data:image/png;base64,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" alt="" />
+          </div>
+          <div class="green-baby position-absolute bottom-0 end-0">
+            <picture>
+              <source
+                media="(max-width: 992px)"
+                srcset="../../assets/images/bg-2-sm.png"
+              />
+              <img src="/2024-homework-week6/assets/bg-2-6e36c816.png" alt="" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 大家都在看 桌面板 -->
+    <section
+      class="watch bg-primary-100 py-18 position-relative d-none d-lg-block"
+    >
+      <div class="container">
+        <div class="row">
+          <h2 class="fs-3 mb-10 fw-bold">大家都在看</h2>
+          <div class="col-3 bg-white list-shadow rounded-3">
+            <ul
+              class="list-group sidebar d-flex flex-column align-items-start p-0 m-2"
+            >
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="nav-link bg-accent-100 p-4 d-block rounded-1"
+                  >．酒精路跑地圖</a
+                >
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="nav-link p-4 d-block">．台北拉麵圖鑑</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="nav-link p-4 d-block">．海島自由行</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="nav-link p-4 d-block">．短天數出國推薦</a>
+              </li>
+              <li class="py-4 fz-5 fw-bold w-100">
+                <a href="#" class="border-0 nav-link p-4 d-block text-start"
+                  >．週末露營趣</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <div class="content-bar bg-white">
+              <div class="p-10">
+                <section class="p-6">
+                  <h6 class="fz-6 text-accent-200 fw-black fw-bold mb-lg-6">
+                    酒精路跑地圖
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                    </li>
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </li>
+                    <li class="fz-4 fw-bold">
+                      ｜台南老宅手工酒藏,尋味百年人文釀意
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list p-4">
+                  <div class="row gap-1 justify-content-center">
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="/2024-homework-week6/assets/hots-1-sm-d41ead80.png "
+                      />
+                      <img
+                        src="/2024-homework-week6/assets/hots-1-4140643e.png"
+                        class="firstPic-border-radius"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="/2024-homework-week6/assets/hots-2-sm-e66a826f.png "
+                      />
+                      <img
+                        src="/2024-homework-week6/assets/hots-2-0511cb4f.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="/2024-homework-week6/assets/hots-3-sm-5ceb5458.png "
+                      />
+                      <img
+                        src="/2024-homework-week6/assets/hots-3-1a547610.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="/2024-homework-week6/assets/hots-4-sm-9226d072.png "
+                      />
+                      <img
+                        src="/2024-homework-week6/assets/hots-4-ec19ac92.png"
+                        class="lastPic-border-radius"
+                      />
+                    </picture>
+                  </div>
+                </section>
+                <section class="p-0 px-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="tag">
+                      <span
+                        class="bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                        >#夜貓行程</span
+                      >
+                      <span
+                        class="bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                        >#barhopping</span
+                      >
+                      <span
+                        class="bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
+                        >#全台酒吧</span
+                      >
+                    </div>
+                    <a
+                      href="#"
+                      class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                      >View More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-arrow-right text-accent-200"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 大家都在看 手機板 -->
+    <section
+      class="watch bg-primary-100 py-12 position-relative d-block d-lg-none"
+    >
+      <div class="container">
+        <h2 class="fs-5 mb-6 fw-bold">大家都在看</h2>
+        <div class="swiper swiper-watch">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    酒精路跑地圖
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜台南老宅手工酒藏,尋味百年人文釀意
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="/2024-homework-week6/assets/hots-1-sm-d41ead80.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#夜貓行程</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#barhopping</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#全台酒吧</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    週末露營趣
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜週末說走就走露營記
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜城市野營日記
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜和寵物去露營 - 大自然之旅的雙倍...
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="/2024-homework-week6/assets/hots-2-sm-e66a826f.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#戶外</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#露營控</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#凹豆</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    台北拉麵圖鑑
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜週末說走就走露營記
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜城市野營日記
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜和寵物去露營 - 大自然之旅的雙倍...
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="/2024-homework-week6/assets/hots-3-sm-5ceb5458.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#雞白湯</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#拉麵</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#台北美食</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    海島自由行
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜私島慢活島嶼生活 - 在熱帶天堂品嘗123456
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜海島漂流記 - 在陽光、沙灘和比基尼123456
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜島嶼蹤跡 - 揭開加勒比海上世外桃源123456
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="/2024-homework-week6/assets/hots-4-sm-9226d072.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#熱帶國家</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#海邊</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#無敵海景</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="mobile-card bg-white list-shadow"
+                style="width: 324px"
+              >
+                <section class="p-4">
+                  <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                    短天數出國推薦
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜72小時東京遊走 - 當個時尚東京通
+                    </li>
+                    <li class="fz-4 fw-bold mb-2 text-truncate">
+                      ｜48小時曼谷遊玩全攻略
+                    </li>
+                    <li class="fz-4 fw-bold text-truncate">
+                      ｜三天兩夜賞櫻微醺東京
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list px-4">
+                  <img src="/2024-homework-week6/assets/hots-5-sm-42a757ac.png" />
+                </section>
+                <section class="p-0 p-4">
+                  <div class="d-flex align-items-center py-2">
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#說走就走</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                      >#出國玩</span
+                    >
+                    <span
+                      class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                      >#東亞</span
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                    >View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-accent-200"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      ></path>
+                    </svg>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 品味生活 -->
+    <section class="life bg-primary-100 py-lg-18 py-10 position-relative">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fs-lg-3 fs-5 fw-bold mb-lg-10 mb-6">品味生活</h2>
+          <section class="carousel-pagination d-flex d-none d-lg-flex">
+            <button
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justify-content-center px-5"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-left text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                ></path>
+              </svg>
+            </button>
+            <hr class="mx-4" style="width: 80px; height: 3px" />
+            <button
+              class="btn btn-outline-secondary rounded-pill text-white d-flex align-items-center justify-content-center px-5"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                ></path>
+              </svg>
+            </button>
+            <div></div>
+          </section>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="life-card d-flex flex-column">
+              <h2 class="fw-bold font-size-52 mb-lg-9 mb-6 text-primary-400">
+                食.
+              </h2>
+              <picture>
+                <source
+                  media="(max-width: 992px)"
+                  srcset="../../assets/images/life-1-sm.png"
+                />
+                <img
+                  src="/2024-homework-week6/assets/life-1-dc3e4076.png"
+                  alt=""
+                  class="mb-lg-9 mb-6 w-100"
+                />
+              </picture>
+              <ul class="p-0 m-0">
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜米其林三星主廚的那些絕活傳奇
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜探秘成都的地道川味秘技與魅力
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-4">
+                  ｜義大利釀酒師對於酒的堅持執著
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn text-accent-200 fw-bold p-0 my-5 fz-5 mx-auto"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="life-card d-flex flex-column">
+              <h2 class="fw-bold font-size-52 mb-lg-9 mb-6 text-primary-400">
+                藝.
+              </h2>
+              <picture>
+                <source
+                  media="(max-width: 992px)"
+                  srcset="../../assets/images/life-2-sm.png"
+                />
+                <img
+                  src="/2024-homework-week6/assets/life-2-e0514e49.png"
+                  alt=""
+                  class="mb-lg-9 mb-6 w-100"
+                />
+              </picture>
+              <ul class="p-0 m-0">
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜解構教主級時裝設計大師的獨特美學
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜當代攝影師鏡頭中的光影離奇
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-4">
+                  ｜帶你穿縮中世紀，夏季文藝復興展
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn text-accent-200 fw-bold p-0 my-5 fz-5 mx-auto"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="life-card d-flex flex-column">
+              <h2 class="fw-bold font-size-52 mb-lg-9 mb-6 text-primary-400">
+                旅.
+              </h2>
+              <picture>
+                <source
+                  media="(max-width: 992px)"
+                  srcset="../../assets/images/life-3-sm.png"
+                />
+                <img
+                  src="/2024-homework-week6/assets/life-3-5b7bb55a.png"
+                  alt=""
+                  class="mb-lg-9 mb-6 w-100"
+                />
+              </picture>
+              <ul class="p-0 m-0">
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜遠離喧囂,偶探巴塔哥尼亞終界
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-lg-5 mb-4">
+                  ｜東京深度六區,帶你細品極簡魅力
+                </li>
+                <li class="fw-bold fs-lg-6 fs-7 mb-4">
+                  ｜專賣奇珍異寶的東歐地下夜市
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn text-accent-200 fw-bold p-0 my-5 fz-5 mx-auto"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 今天又不知道要去哪裡了嗎？ -->
+    <section class="where bg-primary-200 py-20">
+      <div class="container">
+        <div class="row w-100">
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start"
+          >
+            <section
+              class="content d-flex flex-column align-items-center align-items-lg-start"
+            >
+              <h5 class="fw-bold mb-3 fs-lg-6 fs-7 text-gray-400">
+                今天又不知道要去哪裡了嗎？
+              </h5>
+              <h1 class="fw-bold mb-6 fs-lg-4 fs-6">
+                <span class="d-block d-lg-inline text-center">Vivre</span
+                >給你意想不到的生活風格提案
+              </h1>
+              <button
+                class="btn btn-accent-200 rounded-pill text-white d-flex align-items-center justify-content-center px-6 w-fit-content accent-200-hover border-0"
+              >
+                <span class="me-3 fs-lg-6 fs-7 fw-bold display-inline"
+                  >馬上訂閱</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </section>
+          </div>
+          <!-- 電腦版 提案網格 -->
+          <div
+            class="col-lg-6 d-lg-flex d-inline align-items-center mt-20 mt-lg-0 d-lg-block d-none"
+          >
+            <div class="row">
+              <!-- wrap 1 -->
+              <div class="col-lg-6 mb-4">
+                <div class="wrap wrap-1 position-relative mt-lg-20 mb-lg-5">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">親子露營要帶什麼？</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >人氣行程</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-2 -->
+              <div class="col-lg-6 mb-4">
+                <div class="wrap wrap-2 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">山女孩的健行筆記</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >編輯推薦</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-3 -->
+              <div class="col-lg-6 mb-4">
+                <div class="wrap wrap-3 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">質感房間改造攻略！</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >編輯推薦</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-4 -->
+              <div class="col-lg-6 mb-4">
+                <div class="wrap wrap-4 position-relative mt-lg-n20">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">適合溜小孩的海邊景點推薦</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >熱門文章</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 手機版 提案網格 -->
+        <div class="container">
+          <div class="swiper swiper-where">
+            <div
+              class="align-items-center mt-20 d-lg-none d-flex swiper-wrapper"
+            >
+              <!-- wrap 1 -->
+              <div class="swiper-slide">
+                <div class="wrap wrap-1 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">親子露營要帶什麼？</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >人氣行程</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-2 -->
+              <div class="swiper-slide">
+                <div class="wrap wrap-2 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">山女孩的健行筆記</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >編輯推薦</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-3 -->
+              <div class="swiper-slide">
+                <div class="wrap wrap-3 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">質感房間改造攻略！</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >編輯推薦</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap-4 -->
+              <div class="swiper-slide">
+                <div class="wrap wrap-4 position-relative">
+                  <div
+                    class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
+                  >
+                    <p class="text-white fz-4">適合溜小孩的海邊景點推薦</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle"
+                    style="right: -120px"
+                  >
+                    <button
+                      class="btn btn-outline-accent-200 bg-white text-white d-flex align-items-center justify-content-center px-4 w-fit-content"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-fill text-accent-200 me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                        />
+                      </svg>
+                      <span class="text-accent-200 me-3 fz-4 fw-bold"
+                        >熱門文章</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 想看什麼主題由你決定！ -->
+    <section class="contact py-lg-20 py-12 bg-primary-100">
+      <div class="container">
+        <div class="d-flex justify-content-lg-between flex-lg-row flex-column">
+          <h2 class="fs-lg-3 fs-5 mb-4 fw-bold text-center">
+            想看什麼主題由你決定！
+          </h2>
+          <div class="d-flex flex-column">
+            <span
+              class="fs-lg-5 fs-6 mb-lg-3 mb-9 text-gray-500 fw-bold text-center"
+              >歡迎投稿與我們分享</span
+            >
+            <button
+              class="btn btn-accent-200 rounded-pill fs-lg-5 fs-16 d-flex align-self-lg-end align-self-center accent-200-hover border-0"
+            >
+              <span class="text-white fs-lg-6 fs-7">聯絡我們</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="bg-primary-100 m-0" /></div>
+<div class="container"></div>
+<footer
+  class="text-center bg-primary-100 text-primary-400 py-6 fz-4 fw-semibold font-newsreader"
+>
+  ©Vivre 2024 All right Reserved
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-watch", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 180,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 340,
+          },
+        },
+      });
+      const swiper2 = new Swiper(".swiper-where", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        // If we need pagination
+
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 180,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 320,
+          },
+        },
+      });
+    </script>
+    
+  </body>
+</html>

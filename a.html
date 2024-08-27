@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Scrollbar with Horizontal Scrolling</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      /* .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } */
+      .content-container {
+      background-image: url('/2024-homework-week6/assets/hots-1-sm-d41ead80.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7); /* White semi-transparent overlay */
+    }
+
+    .content-text {
+      position: relative;
+      text-align: center;
+      color: #333;
+      z-index: 2; /* Makes sure the text is on top of the overlay */
+    }
+
+    .content-text h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .content-text p {
+      font-size: 1rem;
+      color: #666;
+    }
+    </style>
+    <script type="module" crossorigin src="/2024-homework-week6/assets/main-38c684a8.js"></script>
+    <link rel="stylesheet" href="/2024-homework-week6/assets/main-bd1d2b3d.css">
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="mobile-card bg-white list-shadow me-6 mb-6"
+            style="width: 324px"
+          >
+            <section class="p-4">
+              <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                酒精路跑地圖
+              </h6>
+              <ul class="mb-0 p-0">
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                </li>
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                </li>
+                <li class="fz-4 fw-bold text-truncate">
+                  ｜台南老宅手工酒藏,尋味百年人文釀意
+                </li>
+              </ul>
+            </section>
+            <section class="pic-list px-4">
+              <img src="/2024-homework-week6/assets/hots-1-sm-d41ead80.png" />
+            </section>
+            <section class="p-0 p-4">
+              <div class="d-flex align-items-center py-2">
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#夜貓行程</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#barhopping</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                  >#全台酒吧</span
+                >
+              </div>
+              <a
+                href="#"
+                class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="mobile-card bg-white list-shadow me-6 mb-6"
+            style="width: 324px"
+          >
+            <section class="p-4">
+              <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                週末露營趣
+              </h6>
+              <ul class="mb-0 p-0">
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜週末說走就走露營記
+                </li>
+                <li class="fz-4 fw-bold mb-2 text-truncate">｜城市野營日記</li>
+                <li class="fz-4 fw-bold text-truncate">
+                  ｜和寵物去露營 - 大自然之旅的雙倍...
+                </li>
+              </ul>
+            </section>
+            <section class="pic-list px-4">
+              <img src="/2024-homework-week6/assets/hots-2-sm-e66a826f.png" />
+            </section>
+            <section class="p-0 p-4">
+              <div class="d-flex align-items-center py-2">
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#戶外</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#露營控</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                  >#凹豆</span
+                >
+              </div>
+              <a
+                href="#"
+                class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="mobile-card bg-white list-shadow me-6 mb-6"
+            style="width: 324px"
+          >
+            <section class="p-4">
+              <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                台北拉麵圖鑑
+              </h6>
+              <ul class="mb-0 p-0">
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜週末說走就走露營記
+                </li>
+                <li class="fz-4 fw-bold mb-2 text-truncate">｜城市野營日記</li>
+                <li class="fz-4 fw-bold text-truncate">
+                  ｜和寵物去露營 - 大自然之旅的雙倍...
+                </li>
+              </ul>
+            </section>
+            <section class="pic-list px-4">
+              <img src="/2024-homework-week6/assets/hots-3-sm-5ceb5458.png" />
+            </section>
+            <section class="p-0 p-4">
+              <div class="d-flex align-items-center py-2">
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#雞白湯</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#拉麵</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                  >#台北美食</span
+                >
+              </div>
+              <a
+                href="#"
+                class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="mobile-card bg-white list-shadow me-6 mb-6"
+            style="width: 324px"
+          >
+            <section class="p-4">
+              <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                海島自由行
+              </h6>
+              <ul class="mb-0 p-0">
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜私島慢活島嶼生活 - 在熱帶天堂品嘗123456
+                </li>
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜海島漂流記 - 在陽光、沙灘和比基尼123456
+                </li>
+                <li class="fz-4 fw-bold text-truncate">
+                  ｜島嶼蹤跡 - 揭開加勒比海上世外桃源123456
+                </li>
+              </ul>
+            </section>
+            <section class="pic-list px-4">
+              <img src="/2024-homework-week6/assets/hots-4-sm-9226d072.png" />
+            </section>
+            <section class="p-0 p-4">
+              <div class="d-flex align-items-center py-2">
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#熱帶國家</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#海邊</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                  >#無敵海景</span
+                >
+              </div>
+              <a
+                href="#"
+                class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="mobile-card bg-white list-shadow me-6 mb-6"
+            style="width: 324px"
+          >
+            <section class="p-4">
+              <h6 class="fz-5 text-accent-200 fw-black fw-bold mb-3">
+                短天數出國推薦
+              </h6>
+              <ul class="mb-0 p-0">
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜72小時東京遊走 - 當個時尚東京通
+                </li>
+                <li class="fz-4 fw-bold mb-2 text-truncate">
+                  ｜48小時曼谷遊玩全攻略
+                </li>
+                <li class="fz-4 fw-bold text-truncate">
+                  ｜三天兩夜賞櫻微醺東京
+                </li>
+              </ul>
+            </section>
+            <section class="pic-list px-4">
+              <img src="/2024-homework-week6/assets/hots-5-sm-42a757ac.png" />
+            </section>
+            <section class="p-0 p-4">
+              <div class="d-flex align-items-center py-2">
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#說走就走</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3 me-2"
+                  >#出國玩</span
+                >
+                <span
+                  class="bg-primary-300 text-primary-400 px-2 rounded-1 fw-bold fz-3"
+                  >#東亞</span
+                >
+              </div>
+              <a
+                href="#"
+                class="nav-link text-accent-200 fw-bold p-0 my-4 fz-4 text-center d-block"
+                >View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-accent-200"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  ></path>
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="container">
+      <div class="content-container">
+        <div class="overlay"></div> <!-- Semi-transparent overlay -->
+        <div class="content-text">
+          <h1>私人島嶼的露營奇遇記</h1>
+          <p>2024/5/1</p>
+          <p>這段旅程的開始，是從一個遙遠的小島...</p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    
+  </body>
+</html>
