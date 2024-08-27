@@ -29,6 +29,46 @@
         height: 100%;
         object-fit: cover;
       } */
+      .content-container {
+      background-image: url('../assets/images/hots-1-sm.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7); /* White semi-transparent overlay */
+    }
+
+    .content-text {
+      position: relative;
+      text-align: center;
+      color: #333;
+      z-index: 2; /* Makes sure the text is on top of the overlay */
+    }
+
+    .content-text h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .content-text p {
+      font-size: 1rem;
+      color: #666;
+    }
     </style>
   </head>
   <body>
@@ -334,6 +374,18 @@
       <div class="swiper-pagination"></div>
     </div>
 
+
+    <div class="container">
+      <div class="content-container">
+        <div class="overlay"></div> <!-- Semi-transparent overlay -->
+        <div class="content-text">
+          <h1>私人島嶼的露營奇遇記</h1>
+          <p>2024/5/1</p>
+          <p>這段旅程的開始，是從一個遙遠的小島...</p>
+        </div>
+      </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
