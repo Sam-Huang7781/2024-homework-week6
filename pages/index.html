@@ -674,11 +674,11 @@
     >
       <div class="container">
         <h2 class="fs-5 mb-6 fw-bold">大家都在看</h2>
-        <div class="swiper">
-          <div class="mobile-card-container d-flex swiper-wrapper">
-            <div class="swiper-slide swiper-slide w-auto">
+        <div class="swiper swiper-watch">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div
-                class="mobile-card bg-white list-shadow me-6 mb-6"
+                class="mobile-card bg-white list-shadow"
                 style="width: 324px"
               >
                 <section class="p-4">
@@ -736,9 +736,9 @@
                 </section>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide w-auto">
+            <div class="swiper-slide">
               <div
-                class="mobile-card bg-white list-shadow me-6 mb-6"
+                class="mobile-card bg-white list-shadow"
                 style="width: 324px"
               >
                 <section class="p-4">
@@ -796,9 +796,9 @@
                 </section>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide w-auto">
+            <div class="swiper-slide">
               <div
-                class="mobile-card bg-white list-shadow me-6 mb-6"
+                class="mobile-card bg-white list-shadow"
                 style="width: 324px"
               >
                 <section class="p-4">
@@ -856,9 +856,9 @@
                 </section>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide w-auto">
+            <div class="swiper-slide">
               <div
-                class="mobile-card bg-white list-shadow me-6 mb-6"
+                class="mobile-card bg-white list-shadow"
                 style="width: 324px"
               >
                 <section class="p-4">
@@ -916,9 +916,9 @@
                 </section>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide w-auto">
+            <div class="swiper-slide">
               <div
-                class="mobile-card bg-white list-shadow me-6 mb-6"
+                class="mobile-card bg-white list-shadow"
                 style="width: 324px"
               >
                 <section class="p-4">
@@ -977,6 +977,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -1413,12 +1414,12 @@
 
         <!-- 手機版 提案網格 -->
         <div class="container">
-          <div class="swiper">
+          <div class="swiper swiper-where">
             <div
               class="align-items-center mt-20 d-lg-none d-flex swiper-wrapper"
             >
               <!-- wrap 1 -->
-              <div class="swiper-slide w-auto me-6">
+              <div class="swiper-slide">
                 <div class="wrap wrap-1 position-relative">
                   <div
                     class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
@@ -1465,7 +1466,7 @@
                 </div>
               </div>
               <!-- wrap-2 -->
-              <div class="swiper-slide w-auto me-6">
+              <div class="swiper-slide">
                 <div class="wrap wrap-2 position-relative">
                   <div
                     class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
@@ -1512,7 +1513,7 @@
                 </div>
               </div>
               <!-- wrap-3 -->
-              <div class="swiper-slide w-auto me-6">
+              <div class="swiper-slide">
                 <div class="wrap wrap-3 position-relative">
                   <div
                     class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
@@ -1559,7 +1560,7 @@
                 </div>
               </div>
               <!-- wrap-4 -->
-              <div class="swiper-slide w-auto me-6">
+              <div class="swiper-slide">
                 <div class="wrap wrap-4 position-relative">
                   <div
                     class="describe d-flex align-items-center justify-content-between p-4 position-absolute bottom-0 w-100"
@@ -1637,19 +1638,47 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
+      const swiper = new Swiper(".swiper-watch", {
         // Optional parameters
         direction: "horizontal",
         loop: true,
-
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
         },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 180,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 340,
+          },
+        },
+      });
+      const swiper2 = new Swiper(".swiper-where", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        // If we need pagination
+
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 180,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 320,
+          },
         },
       });
     </script>
