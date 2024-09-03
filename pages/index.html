@@ -534,30 +534,62 @@
           <h2 class="fs-3 mb-10 fw-bold">大家都在看</h2>
           <div class="col-3 bg-white list-shadow rounded-3">
             <ul
-              class="list-group sidebar d-flex flex-column align-items-start p-0 m-2"
+              class="list-group list-unstyled gap-6 py-4"
+              role="tablist"
             >
-              <li class="py-4 fz-5 fw-bold w-100">
-                <a href="#" class="nav-link bg-accent-100 p-4 d-block rounded-1"
-                  >．酒精路跑地圖</a
+              <li>
+                <a
+                  class="list-group-item list-group-item-action active border-0 rounded-1 p-4 fz-5 fw-bold"
+                  data-bs-toggle="list"
+                  href="#drunk"
+                  role="tab"
+                  aria-controls="drunk"
+                  >· 酒精路跑地圖</a
                 >
               </li>
-              <li class="py-4 fz-5 fw-bold w-100">
-                <a href="#" class="nav-link p-4 d-block">．台北拉麵圖鑑</a>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action border-0 rounded-1 p-4 fz-5 fw-bold"
+                  data-bs-toggle="list"
+                  href="#ramen"
+                  role="tab"
+                  aria-controls="ramen"
+                  >· 台北拉麵圖鑑</a
+                >
               </li>
-              <li class="py-4 fz-5 fw-bold w-100">
-                <a href="#" class="nav-link p-4 d-block">．海島自由行</a>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action border-0 rounded-1 p-4 fz-5 fw-bold"
+                  data-bs-toggle="list"
+                  href="#island"
+                  role="tab"
+                  aria-controls="island"
+                  >· 海島自由行</a
+                >
               </li>
-              <li class="py-4 fz-5 fw-bold w-100">
-                <a href="#" class="nav-link p-4 d-block">．短天數出國推薦</a>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action border-0 rounded-1 p-4 fz-5 fw-bold"
+                  data-bs-toggle="list"
+                  href="#play"
+                  role="tab"
+                  aria-controls="play"
+                  >· 短天數出國推薦</a
+                >
               </li>
-              <li class="py-4 fz-5 fw-bold w-100">
-                <a href="#" class="border-0 nav-link p-4 d-block text-start"
-                  >．週末露營趣</a
+              <li>
+                <a
+                  class="list-group-item list-group-item-action border-0 rounded-1 p-4 fz-5 fw-bold"
+                  data-bs-toggle="list"
+                  href="#camp"
+                  role="tab"
+                  aria-controls="camp"
+                  >· 週末露營趣</a
                 >
               </li>
             </ul>
           </div>
-          <div class="col-9">
+          <div class="col-9 collapse show" id="drunk">
             <div class="content-bar bg-white">
               <div class="p-10">
                 <section class="p-6">
@@ -644,6 +676,446 @@
                         class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
                       >
                         #全台酒吧
+                      </button>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                      >View More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-arrow-right text-accent-200"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 collapse" id="ramen">
+            <div class="content-bar bg-white">
+              <div class="p-10">
+                <section class="p-6">
+                  <h6 class="fz-6 text-accent-200 fw-black fw-bold mb-lg-6">
+                    台北拉麵圖鑑
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜週末說走就走露營記 </a>
+                    </li>
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜城市野營日記 </a>
+                    </li>
+                    <li class="fz-4 fw-bold">
+                      <a href="#"> ｜和寵物去露營 - 大自然之旅的雙倍... </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list p-4">
+                  <div class="row gap-1 justify-content-center">
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-1-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-1.png"
+                        class="firstPic-border-radius"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-2-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-2.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-3-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-3.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-4-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-4.png"
+                        class="lastPic-border-radius"
+                      />
+                    </picture>
+                  </div>
+                </section>
+                <section class="p-0 px-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="tag">
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #雞白湯
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #拉麵
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
+                      >
+                        #台北美食
+                      </button>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                      >View More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-arrow-right text-accent-200"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 collapse" id="island">
+            <div class="content-bar bg-white">
+              <div class="p-10">
+                <section class="p-6">
+                  <h6 class="fz-6 text-accent-200 fw-black fw-bold mb-lg-6">
+                    海島自由行
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜私島慢活島嶼生活 - 在熱帶天堂品嘗 </a>
+                    </li>
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜海島漂流記 - 在陽光、沙灘和比基尼 </a>
+                    </li>
+                    <li class="fz-4 fw-bold">
+                      <a href="#"> ｜島嶼蹤跡 - 揭開加勒比海上世外桃源 </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list p-4">
+                  <div class="row gap-1 justify-content-center">
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-1-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-1.png"
+                        class="firstPic-border-radius"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-2-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-2.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-3-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-3.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-4-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-4.png"
+                        class="lastPic-border-radius"
+                      />
+                    </picture>
+                  </div>
+                </section>
+                <section class="p-0 px-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="tag">
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #熱帶國家
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #海邊
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
+                      >
+                        #無敵海景
+                      </button>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                      >View More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-arrow-right text-accent-200"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 collapse" id="play">
+            <div class="content-bar bg-white">
+              <div class="p-10">
+                <section class="p-6">
+                  <h6 class="fz-6 text-accent-200 fw-black fw-bold mb-lg-6">
+                    短天數出國推薦
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜72小時東京遊走 - 當個時尚東京通 </a>
+                    </li>
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜48小時曼谷遊玩全攻略 </a>
+                    </li>
+                    <li class="fz-4 fw-bold">
+                      <a href="#"> ｜三天兩夜賞櫻微醺東京 </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list p-4">
+                  <div class="row gap-1 justify-content-center">
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-1-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-1.png"
+                        class="firstPic-border-radius"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-2-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-2.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-3-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-3.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-4-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-4.png"
+                        class="lastPic-border-radius"
+                      />
+                    </picture>
+                  </div>
+                </section>
+                <section class="p-0 px-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="tag">
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #說走就走
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #出國玩
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
+                      >
+                        #東亞
+                      </button>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn text-accent-200 fw-bold p-0 my-5 fz-5"
+                      >View More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-arrow-right text-accent-200"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 collapse" id="camp">
+            <div class="content-bar bg-white">
+              <div class="p-10">
+                <section class="p-6">
+                  <h6 class="fz-6 text-accent-200 fw-black fw-bold mb-lg-6">
+                    週末露營趣
+                  </h6>
+                  <ul class="mb-0 p-0">
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜週末說走就走露營記 </a>
+                    </li>
+                    <li class="fz-4 fw-bold mb-lg-5">
+                      <a href="#"> ｜城市野營日記 </a>
+                    </li>
+                    <li class="fz-4 fw-bold">
+                      <a href="#"> ｜和寵物去露營 - 大自然之旅的雙倍... </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="pic-list p-4">
+                  <div class="row gap-1 justify-content-center">
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-1-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-1.png"
+                        class="firstPic-border-radius"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-2-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-2.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-3-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-3.png"
+                        class="rounded-2"
+                      />
+                    </picture>
+
+                    <picture class="col-lg-3 p-0 w-auto">
+                      <source
+                        media="(max-width: 992px)"
+                        srcset="../assets/images/hots-4-sm.png"
+                      />
+                      <img
+                        src="../assets/images/hots-4.png"
+                        class="lastPic-border-radius"
+                      />
+                    </picture>
+                  </div>
+                </section>
+                <section class="p-0 px-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="tag">
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #戶外
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4 me-4"
+                      >
+                        #露營控
+                      </button>
+                      <button
+                        class="btn badge bg-primary-300 text-primary-400 px-3 py-2 rounded-1 fw-bold fz-4"
+                      >
+                        #凹豆
                       </button>
                     </div>
                     <a
@@ -1227,22 +1699,22 @@
       <div class="container">
         <div class="row w-100">
           <div
-            class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start"
+            class="col-xl-6 d-flex align-items-center justify-content-center justify-content-xl-start"
           >
             <section
-              class="content d-flex flex-column align-items-center align-items-lg-start"
+              class="content d-flex flex-column align-items-center align-items-xl-start"
             >
-              <h5 class="fw-bold mb-3 fs-lg-6 fs-7 text-gray-400">
+              <h5 class="fw-bold mb-3 fs-xl-6 fs-7 text-gray-400">
                 今天又不知道要去哪裡了嗎？
               </h5>
-              <h2 class="fw-bold mb-6 fs-lg-4 fs-6">
-                <span class="d-block d-lg-inline text-center">Vivre</span
+              <h2 class="fw-bold mb-6 fs-xl-4 fs-6">
+                <span class="d-block d-xl-inline text-center">Vivre</span
                 >給你意想不到的生活風格提案
               </h2>
               <button
                 class="btn btn-accent-200 rounded-pill text-white d-flex align-items-center justify-content-center px-6 w-fit-content accent-200-hover border-0"
               >
-                <span class="me-3 fs-lg-6 fs-7 fw-bold display-inline"
+                <span class="me-3 fs-xl-6 fs-7 fw-bold display-inline"
                   >馬上訂閱</span
                 >
                 <svg
